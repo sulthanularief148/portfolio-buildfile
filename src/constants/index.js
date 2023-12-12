@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  xerago,
+  zealzoft,
+  zealscreenshot,
+  tindog,
+  flipkart
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +59,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Databases",
     icon: creator,
   },
 ];
@@ -116,11 +121,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Developer",
+    company_name: "Xerago",
+    icon: xerago,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Mar 2022 - sep 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React.js Developer",
+    company_name: "xerago",
+    icon: xerago,
+    iconBg: "#383E56",
+    date: "Sep 2022 - Feb 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -130,10 +148,10 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    company_name: "Zeal zoft",
+    icon: zealzoft,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Feb 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -141,25 +159,13 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "Zeal zoft",
+    icon: zealzoft,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Feb 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,16 +204,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ZealZoft Corporate Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I had the privilege of spearheading the development of ZealZoft's corporate website, a project that seamlessly blends innovation and aesthetics. Leveraging the power of React for a dynamic user interface and incorporating Three.js for immersive 3D graphics, the website stands as a testament to ZealZoft's commitment to cutting-edge technology.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Three js",
         color: "green-text-gradient",
       },
       {
@@ -215,41 +221,41 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: zealscreenshot,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Tindog - Tinder for Dogs",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Tindog, a whimsical and innovative project, brings the concept of dating apps to the canine world. As the sole developer behind this endeavor, I utilized a stack of HTML, CSS, Bootstrap, and jQuery to create a visually appealing and interactive platform for dogs and their owners.",
     tags: [
       {
-        name: "react",
+        name: "HTML,CSS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Jquery",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: tindog,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Flipkart Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Flipkart clone project stands as a testament to my prowess in full-stack development, showcasing the meticulous implementation of an e-commerce platform akin to the popular Flipkart. Employing HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, I meticulously crafted an immersive and feature-rich online shopping experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "React js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Material UI",
         color: "green-text-gradient",
       },
       {
@@ -257,7 +263,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: flipkart,
     source_code_link: "https://github.com/",
   },
 ];

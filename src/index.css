@@ -126,6 +126,15 @@
   transform: translateZ(0);
 }
 
+.bg-color {
+  background: rgb(0, 81, 145);
+  background: linear-gradient(
+    90deg,
+    rgb(0 0 0) 0%,
+    rgb(33 56 91 / 78%) 43%,
+    rgb(67 48 173 / 99%) 100%
+  );
+}
 @keyframes mulShdSpin {
   0%,
   100% {

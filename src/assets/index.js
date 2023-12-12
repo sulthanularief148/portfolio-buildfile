@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,17 +20,21 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import xerago from './company/xerago.png';
+import zealzoft from './company/zealzoft.png';
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import zealscreenshot from './zealscreenshot.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import tindog from './tindog.png';
+import flipkart from './flipkart.png'
 
 export {
+  flipkart,
   logo,
   backend,
   creator,
@@ -59,4 +63,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  xerago,
+  zealzoft,
+  zealscreenshot,
+  tindog
 };
