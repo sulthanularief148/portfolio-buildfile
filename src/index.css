@@ -8,11 +8,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "cursive";
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-
+/* Poppins", sans-serif */
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -127,13 +127,14 @@
 }
 
 .bg-color {
-  background: rgb(0, 81, 145);
+  /* background: rgb(0, 81, 145);
   background: linear-gradient(
     90deg,
     rgb(0 0 0) 0%,
     rgb(33 56 91 / 78%) 43%,
     rgb(67 48 173 / 99%) 100%
-  );
+  ); */
+  background-color: black;
 }
 @keyframes mulShdSpin {
   0%,

@@ -27,10 +27,14 @@ import {
   zealzoft,
   zealscreenshot,
   tindog,
-  flipkart
+  flipkart,
 } from "../assets";
 
 export const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
   {
     id: "about",
     title: "About",
