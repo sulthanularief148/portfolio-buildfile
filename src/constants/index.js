@@ -228,27 +228,27 @@ const projects = [
     image: zealscreenshot,
     source_code_link: "https://github.com/",
   },
-  {
-    name: "Tindog - Tinder for Dogs",
-    description:
-      "Tindog, a whimsical and innovative project, brings the concept of dating apps to the canine world. As the sole developer behind this endeavor, I utilized a stack of HTML, CSS, Bootstrap, and jQuery to create a visually appealing and interactive platform for dogs and their owners.",
-    tags: [
-      {
-        name: "HTML,CSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Jquery",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tindog,
-    source_code_link: "https://github.com/",
-  },
+  // {
+  //   name: "Tindog - Tinder for Dogs",
+  //   description:
+  //     "Tindog, a whimsical and innovative project, brings the concept of dating apps to the canine world. As the sole developer behind this endeavor, I utilized a stack of HTML, CSS, Bootstrap, and jQuery to create a visually appealing and interactive platform for dogs and their owners.",
+  //   tags: [
+  //     {
+  //       name: "HTML,CSS",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Javascript",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Jquery",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tindog,
+  //   source_code_link: "https://github.com/",
+  // },
   {
     name: "Flipkart Clone",
     description:
