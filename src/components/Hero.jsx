@@ -18,7 +18,7 @@ const Hero = () => {
         <div>
           <TypeAnimation
             className={`${styles.heroHeadText} text-white`}
-            style={{ fontSize: "3.1em", color:"#915EFF" }}
+            style={{ fontSize: "3.1em", color: "#915EFF" }}
             sequence={[
               "Hello, I'm Sulthanul Arief, a web developer.",
               1000,
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

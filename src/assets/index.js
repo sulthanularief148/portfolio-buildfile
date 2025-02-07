@@ -32,8 +32,15 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import tindog from './tindog.png';
 import flipkart from './flipkart.png'
-
+import effortz_logo from "./effortz_logo.png"
+import stratavision from "./stratavision.png"
+import ariefshopping from "./ariefshopping.png"
+import merxsea from "./merxsea.png"
+import hextech from "./hextech.png"
 export {
+  ariefshopping,
+  merxsea,
+  hextech,
   flipkart,
   logo,
   backend,
@@ -66,5 +73,7 @@ export {
   xerago,
   zealzoft,
   zealscreenshot,
-  tindog
+  tindog,
+  effortz_logo,
+  stratavision
 };

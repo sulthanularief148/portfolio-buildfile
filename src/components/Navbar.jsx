@@ -109,7 +109,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-
-// ${
-//   scrolled ? "bg-primary" : "bg-transparent"
-// }
