@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import makemytrip from "./makemytrip.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -37,6 +37,8 @@ import stratavision from "./stratavision.png"
 import ariefshopping from "./ariefshopping.png"
 import merxsea from "./merxsea.png"
 import hextech from "./hextech.png"
+import ecommercemern from "./ecommerce-mern.png"
+import grocery from "./grocery.png"
 export {
   ariefshopping,
   merxsea,
@@ -75,5 +77,8 @@ export {
   zealscreenshot,
   tindog,
   effortz_logo,
-  stratavision
+  stratavision,
+  makemytrip,
+  ecommercemern,
+  grocery
 };

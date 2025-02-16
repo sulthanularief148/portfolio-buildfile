@@ -24,7 +24,10 @@ import {
   stratavision,
   ariefshopping,
   merxsea,
-  hextech
+  hextech,
+  makemytrip,
+  ecommercemern,
+  grocery
 } from "../assets";
 
 export const navLinks = [
@@ -184,154 +187,104 @@ const experiences = [
 
 const projects = [
   {
-    name: "ZealZoft Corporate Website",
-    description:
-      "I had the privilege of spearheading the development of ZealZoft's corporate website, a project that seamlessly blends innovation and aesthetics. Leveraging the power of React for a dynamic user interface and incorporating Three.js for immersive 3D graphics, the website stands as a testament to ZealZoft's commitment to cutting-edge technology.",
+    name: "E-commerce Full Stack",
+    description: `Developed a full-stack e-commerce platform with a frontend, backend, and admin panel. Integrated Razorpay, Stripe, and COD for payments, implemented secure authentication with JWT, and built a scalable architecture using React.js, Node.js, Express.js, and MongoDB.`,
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Three js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+    ],
+    image: ecommercemern,
+    source_code_link: "https://mern-ecommerce-frontend-blush.vercel.app",
+  },
+  {
+    name: "Grocery Landing Page",
+    description: `Designed and developed a responsive grocery landing page with a modern UI using React.js and Tailwind CSS. Focused on performance, accessibility, and mobile-friendly layouts for an optimal user experience.`,
+    tags: [
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+    ],
+    image: grocery,
+    source_code_link: "https://grocery-flame.vercel.app/",
+  },
+  {
+    name: "ZealZoft Corporate Website",
+    description: `Developed an innovative corporate website for ZealZoft, integrating Three.js for immersive 3D effects. Built with React.js and Tailwind CSS, the website showcases a modern, interactive, and dynamic user experience.`,
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Three.js", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
     ],
     image: zealscreenshot,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://zealzoft.com",
   },
   {
     name: "Flipkart Clone",
-    description:
-      "The Flipkart clone project stands as a testament to my prowess in full-stack development, showcasing the meticulous implementation of an e-commerce platform akin to the popular Flipkart. Employing HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, I meticulously crafted an immersive and feature-rich online shopping experience.",
+    description: `Built a feature-rich Flipkart clone, implementing an intuitive shopping experience with product listings, cart functionality, and user authentication. Developed with React.js, Material UI, Node.js, and MongoDB for a seamless e-commerce experience.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Material UI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      },
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Material UI", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
     ],
     image: flipkart,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://sulthanularief148.github.io/Flipkart-Demo",
   },
   {
     name: "Stratavision",
-    description: `Developed the Stratavision company website, emphasizing their role as dedicated growth partners rather than just service providers. Created a dynamic and engaging online presence that aligns with Stratavision's mission to help clients chart the roadmap for their vision, utilizing modern web technologies to ensure a seamless, responsive, and user-friendly experience. (September 2023)`,
+    description: `Created a corporate website for Stratavision, emphasizing its role as a growth partner. Developed a responsive, user-friendly, and visually appealing platform using modern web technologies to enhance engagement and brand identity.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      },
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
     ],
     image: stratavision,
-    source_code_link: "https://www.stratavision.in/",
+    source_code_link: "https://www.stratavision.in",
   },
   {
     name: "E-commerce Shopping",
-    description: `Developed the front end of an e-commerce shopping web app using React.js and Redux, focusing on dynamic user interfaces and state management, while implementing the back end with Sanity to manage content and ensure seamless integration. Designed and integrated features for an electronics shopping experience, including product listings for headphones and speakers, and implemented shopping cart functionality along with Stripe payment integration for secure transactions. (June 2023 – August 2023, Parangipettai, India)`,
+    description: `Developed a front-end e-commerce shopping web app featuring dynamic product listings, cart management, and secure Stripe payments. Built with React.js, Redux Toolkit for state management, and Sanity CMS for backend content handling.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Sanity",
-        color: "green-text-gradient"
-      }
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+      { name: "Sanity", color: "green-text-gradient" },
     ],
     image: ariefshopping,
-    source_code_link: "https://ariefshopping.vercel.app/",
+    source_code_link: "https://ariefshopping.vercel.app",
   },
   {
     name: "Merxsea - Oil and Gas",
-    description: `Developed a dynamic website for Merxsea, an oil and gas company, to enhance its online presence and highlight its offerings through detailed service descriptions. Designed and implemented a project showcase to display completed and ongoing projects, integrating interactive elements to engage potential clients and improve user experience. Utilized React.js, Tailwind CSS, and Framer Motion for a modern and visually appealing design. (May 2023, Parangipettai, India)`,
+    description: `Designed and developed a modern, interactive website for Merxsea, an oil and gas company. Implemented a project showcase section, enhancing user engagement through animations and smooth navigation with Framer Motion.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "green-text-gradient"
-      }
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+      { name: "Framer Motion", color: "green-text-gradient" },
     ],
     image: merxsea,
-    source_code_link: "https://merxsea.com/",
+    source_code_link: "https://merxsea.com",
   },
   {
-    name: " Hex Tech Ltd Company website",
-    description: `Developed a modern and responsive website for Hex Tech Ltd, a mobile store specializing in the latest mobile devices and accessories, designed to provide an intuitive shopping experience for customers. Utilized React.js and Tailwind CSS to create a visually appealing and user-friendly interface.`,
+    name: "Hex Tech Ltd Website",
+    description: `Developed a modern and responsive website for Hex Tech Ltd, a mobile store specializing in smartphones and accessories. Focused on intuitive UI, accessibility, and a seamless shopping experience using React.js and Tailwind CSS.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      }
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
     ],
     image: hextech,
-    source_code_link: "https://hextechltd.com/",
+    source_code_link: "https://hextechltd.com",
   },
   {
-    name: "Make my Trip Clone UI",
-    description: `Developed a demo website for Make My Trip, focusing on the home page UI to showcase travel booking features and user interface design. Utilized React.js and Tailwind CSS to create a visually appealing and user-friendly layout.`,
+    name: "Make My Trip Clone UI",
+    description: `Developed a front-end UI demo for Make My Trip, showcasing a modern travel booking interface. Built with React.js and Tailwind CSS to create a visually appealing, responsive, and interactive design.`,
     tags: [
-      {
-        name: "React js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "pink-text-gradient",
-      }
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
     ],
-    image: hextech,
-    source_code_link: "https://makemytrip-demoproject.vercel.app/",
+    image: makemytrip,
+    source_code_link: "https://makemytrip-demoproject.vercel.app",
   },
 ];
 

@@ -30,7 +30,7 @@ const App = () => {
           <Experience />
           <Tech />
           <Works />
-          {/* <Feedbacks /> */}
+          <Feedbacks />
         </Suspense>
         <div className="relative z-0">
           <Suspense fallback={<LoadingSpinner />}>
