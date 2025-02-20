@@ -27,7 +27,9 @@ import {
   hextech,
   makemytrip,
   ecommercemern,
-  grocery
+  grocery,
+  swiggy,
+  tindog
 } from "../assets";
 
 export const navLinks = [
@@ -42,6 +44,14 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Projects",
+  },
+  {
+    id: "achievements",
+    title: "Achievement",
   },
   {
     id: "contact",
@@ -181,6 +191,9 @@ const experiences = [
     points: [
       "Worked with Centralized Monitoring System (CMS) project from February to May 2024, creating REST APIs using Java.",
       "Working with OTAR project from June 2024 to present, developing UI using Angular.",
+      "Developed dynamic web applications using Angular, React, and Java.",
+      "Created RESTful APIs with Java and integrated APIs in Angular."
+
     ],
   },
 ];
@@ -286,6 +299,30 @@ const projects = [
     image: makemytrip,
     source_code_link: "https://makemytrip-demoproject.vercel.app",
   },
+  {
+    name: "Swiggy Clone",
+    description: `Developed a Swiggy Clone using Swiggy's live API, featuring a responsive and interactive front-end UI. Built with React.js and Tailwind CSS to provide a seamless food ordering experience with real-time data integration.`,
+    tags: [
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+    ],
+    image: swiggy,
+    source_code_link: "https://namaste-react-six-kappa.vercel.app",
+  },
+  {
+    name: "Tindog Website",
+    description: `Developed a single-page Tindog website using HTML, CSS, and Bootstrap. The website features a clean and responsive design, showcasing seamless navigation and engaging UI for connecting dog lovers.`,
+    tags: [
+      { name: "HTML", color: "orange-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+      { name: "Bootstrap", color: "purple-text-gradient" }
+    ],
+    image: tindog,
+    source_code_link: "https://tindog-xi-wine.vercel.app"
+  }
+
+
 ];
 
 export { services, technologies, experiences, projects };

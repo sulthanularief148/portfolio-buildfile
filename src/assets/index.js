@@ -30,7 +30,6 @@ import zealscreenshot from './zealscreenshot.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import tindog from './tindog.png';
 import flipkart from './flipkart.png'
 import effortz_logo from "./effortz_logo.png"
 import stratavision from "./stratavision.png"
@@ -39,6 +38,8 @@ import merxsea from "./merxsea.png"
 import hextech from "./hextech.png"
 import ecommercemern from "./ecommerce-mern.png"
 import grocery from "./grocery.png"
+import tindog from "./tindog.png"
+import swiggy from "./swiggy.png"
 export {
   ariefshopping,
   merxsea,
@@ -80,5 +81,6 @@ export {
   stratavision,
   makemytrip,
   ecommercemern,
-  grocery
+  grocery,
+  swiggy
 };

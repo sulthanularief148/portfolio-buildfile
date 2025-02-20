@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
+// import Threads from "./components/Threads";
 
 // Lazy load components
 const About = lazy(() => import("./components/About"));
@@ -12,7 +13,8 @@ const Navbar = lazy(() => import("./components/Navbar"));
 const Tech = lazy(() => import("./components/Tech"));
 const Works = lazy(() => import("./components/Works"));
 const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
-const LoadingSpinner = lazy(() => import("./components/LoadingSpinner")); 
+const LoadingSpinner = lazy(() => import("./components/LoadingSpinner"));
+const TeachingAchievements = lazy(() => import("./components/TeachingAchievements"));
 
 
 const App = () => {
@@ -30,7 +32,16 @@ const App = () => {
           <Experience />
           <Tech />
           <Works />
-          <Feedbacks />
+          <TeachingAchievements />
+          {/* <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+            <Threads
+              amplitude={2}
+              distance={1}
+              enableMouseInteraction={true}
+            />
+          </div> */}
+          {/* <Feedbacks /> */}
+         
         </Suspense>
         <div className="relative z-0">
           <Suspense fallback={<LoadingSpinner />}>

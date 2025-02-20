@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       style={{
         backdropFilter: scrolled ? "blur(10px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(10px)" : "none", // for WebKit browsers
+        WebkitBackdropFilter: scrolled ? "blur(10px)" : "none",
         zIndex: 999,
       }}
       className={`${
@@ -47,14 +47,13 @@ const Navbar = () => {
         >
           <img
             src={logo}
-            width="20px"
+         
             alt="logo"
-            className="w-9 h-9 object-contain"
+            className="w-16 object-contain"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          {/* <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Arief &nbsp;
-            {/* <span className='sm:block hidden'> | JavaScript Mastery</span> */}
-          </p>
+          </p> */}
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-20">
