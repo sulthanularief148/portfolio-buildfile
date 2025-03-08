@@ -40,8 +40,10 @@ import ecommercemern from "./ecommerce-mern.png"
 import grocery from "./grocery.png"
 import tindog from "./tindog.png"
 import swiggy from "./swiggy.png"
+import moviefinder from "./moviefinder.png"
 export {
   ariefshopping,
+  moviefinder,
   merxsea,
   hextech,
   flipkart,

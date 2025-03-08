@@ -1,5 +1,6 @@
 import { color } from "framer-motion";
 import {
+  moviefinder,
   mobile,
   backend,
   creator,
@@ -42,6 +43,10 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "work",
     title: "Work",
   },
@@ -65,7 +70,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Devops Engineer",
     icon: mobile,
   },
   {
@@ -161,7 +166,7 @@ const experiences = [
     company_name: "Zeal Zoft",
     icon: zealzoft,
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Present",
+    date: "May 2023 - January 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -174,7 +179,7 @@ const experiences = [
     company_name: "Zeal Zoft",
     icon: zealzoft,
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Present",
+    date: "May 2023 - January 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -320,9 +325,111 @@ const projects = [
     ],
     image: tindog,
     source_code_link: "https://tindog-xi-wine.vercel.app"
+  },
+  {
+    name: "Movie Finder Webapp",
+    description: `Developed a Movie Finder webapp using React, Tailwind CSS, and integrated with the TMDB API to fetch movie data. The app allows users to search and explore movies while tracking search counts with Appwrite database integration. Designed a responsive and intuitive interface for a seamless user experience.`,
+    tags: [
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Appwrite", color: "purple-text-gradient" },
+      { name: "TMDB API", color: "yellow-text-gradient" }
+    ],
+    image: moviefinder,
+    source_code_link: "https://movie-finder-vert.vercel.app"
   }
+
 
 
 ];
 
-export { services, technologies, experiences, projects };
+const achievementsData = [
+  {
+    id: 1,
+    title: "Frontend Development Instructor",
+    duration: "3 Months",
+    description:
+      "Successfully taught frontend development to students, focusing on practical implementations and building real-world projects.",
+    topicsCovered: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React"],
+    highlights: [
+      "Guided students through building responsive web applications.",
+      "Emphasized best practices in frontend development and UI/UX principles.",
+      "Introduced state management using React hooks and advanced component patterns.",
+    ],
+  },
+  {
+    id: 2,
+    title: "8th Place - State Level Children's & Open Chess Tournament",
+    duration: "August 2019",
+    description:
+      "Achieved 8th place in the Open Age Category at Rotary Club Arakkonam, competing with players from across Tamil Nadu.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["Scored 4 points", "State Level Open Age Category", "Hosted at Dhaanish Ahmed College of Engineering"],
+  },
+  {
+    id: 3,
+    title: "5km Marathon Completion",
+    duration: "April 2019",
+    description:
+      "Successfully completed a 5km marathon organized by Portonovo, demonstrating endurance and commitment to fitness.",
+    topicsCovered: ["Marathon"],
+    highlights: ["Endurance and fitness achievement"],
+  },
+  {
+    id: 4,
+    title: "1st Place - District Level Tamil Poetry Competition",
+    duration: "February 2017",
+    description: "Won 1st place in a district-level Tamil poetry competition, showcasing creativity and love for Tamil literature.",
+    topicsCovered: ["Poetry", "Tamil Literature"],
+    highlights: ["Celebrated Tamil language and culture", "Creative writing recognition"],
+  },
+  {
+    id: 5,
+    title: "2nd Place - District Level Junior Chess Tournament (Under-17)",
+    duration: "August 2016",
+    description: "Secured 2nd place in the Under-17 category with 8.5 points out of 9 rounds at Raja Ravisekar Chess Club.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["High performance with 8.5/9 points", "District Level"],
+  },
+  {
+    id: 6,
+    title: "1st Place - District Level Junior Chess Tournament (Under-17)",
+    duration: "August 2015",
+    description: "Achieved 1st place with a perfect score of 5/5 points in the Under-17 category at Raja Ravisekar Chess Club.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["Perfect 5/5 score", "District Level"],
+  },
+  {
+    id: 7,
+    title: "5th Place - Mammoth Chess Record Attempt (Under-17)",
+    duration: "July 2015",
+    description: "Participated in a record-attempt chess tournament, securing 5th place with 6 points out of 7 rounds.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["Mega Tournament", "Record Attempt"],
+  },
+  {
+    id: 8,
+    title: "1st Place - District Level Republic Day Chess Tournament (Under-19)",
+    duration: "January 2015",
+    description: "Won 1st place with a perfect score of 6/6 points in the District Level Republic Day Chess Tournament.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["Perfect 6/6 score", "Under-19 Category"],
+  },
+  {
+    id: 9,
+    title: "11th Place - State Level Children's & Open Chess Tournament (Under-17)",
+    duration: "February 2013",
+    description: "Secured 11th place at Dragon Chess Academy's State Level Chess Tournament, scoring 3.5 points.",
+    topicsCovered: ["Chess Tournament"],
+    highlights: ["State Level", "Competitive Under-17 Category"],
+  },
+  // {
+  //   id: 10,
+  //   title: "3rd Place - District Level Science Quiz Competition",
+  //   duration: "6th Standard",
+  //   description: "Secured 3rd place in a district-level science quiz competition while studying at Panchayat Union Middle School.",
+  //   topicsCovered: ["Science Quiz"],
+  //   highlights: ["District Level", "Team Performance"],
+  // },
+];
+export { services, technologies, experiences, projects, achievementsData };

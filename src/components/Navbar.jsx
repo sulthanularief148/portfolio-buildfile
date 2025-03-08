@@ -36,7 +36,7 @@ const Navbar = () => {
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 `}
     >
-      <div className="w-full flex justify-around  items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between  items-center max-w-7xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -56,7 +56,7 @@ const Navbar = () => {
           </p> */}
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-20">
+        <ul className="list-none hidden sm:flex flex-row gap-12">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
