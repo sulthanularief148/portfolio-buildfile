@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import blog from "./blog.webp"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -84,5 +85,6 @@ export {
   makemytrip,
   ecommercemern,
   grocery,
-  swiggy
+  swiggy,
+  blog
 };

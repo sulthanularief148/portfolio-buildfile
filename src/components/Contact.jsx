@@ -17,7 +17,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [captchaValue, setCaptchaValue] = useState(null);
+  // const [captchaValue, setCaptchaValue] = useState(null);
 
   // Email validation function
   const validateEmail = (email) => {
@@ -43,10 +43,10 @@ const Contact = () => {
       return;
     }
 
-    if (!captchaValue) {
-      toast.error("Please complete the reCAPTCHA verification.");
-      return;
-    }
+    // if (!captchaValue) {
+    //   toast.error("Please complete the reCAPTCHA verification.");
+    //   return;
+    // }
 
     setLoading(true);
 
@@ -68,7 +68,7 @@ const Contact = () => {
           setLoading(false);
           toast.success("Thank you! I will get back to you as soon as possible 😊.");
           setForm({ name: "", email: "", message: "" });
-          setCaptchaValue(null);
+          // setCaptchaValue(null);
         },
         (error) => {
           setLoading(false);
@@ -133,18 +133,18 @@ const Contact = () => {
           </label>
 
           {/* reCAPTCHA */}
-          <div className="mt-2">
+          {/* <div className="mt-2">
             <ReCAPTCHA
               sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} size="invisible"
               onChange={(value) => setCaptchaValue(value)}
             />
-          </div>
+          </div> */}
 
           {/* Submit Button */}
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-            disabled={!captchaValue}
+            // disabled={!captchaValue}
           >
             {loading ? "Sending..." : "Send"}
           </button>

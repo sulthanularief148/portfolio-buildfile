@@ -16,7 +16,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div>
+    <motion.div onClick={() => window.open(source_code_link, "_blank")}>
       <Tilt
         options={{
           max: 45,
@@ -24,6 +24,7 @@ const ProjectCard = ({
           speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+
       >
         <div className="relative w-full h-[200px] sm:h-[230px]">
           <img
@@ -34,10 +35,8 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              {/* ✅ Using Lucide's Link icon instead of GitHub image */}
               <Link className="w-6 h-6 text-white" />
             </div>
           </div>
@@ -91,9 +90,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-
-      {/* ✅ Adjusted flex for mobile responsiveness */}
-      <div className="mt-20 flex flex-wrap justify-center gap-7">
+      <div className="mt-20 flex flex-wrap justify-center gap-7 cursor-pointer">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

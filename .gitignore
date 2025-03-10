@@ -1,4 +1,10 @@
-# Logs
+# Ignore everything
+*
+
+# Allow only dist folder
+!/dist
+
+# Ignore editor settings, logs, and environment files
 logs
 *.log
 npm-debug.log*
@@ -8,12 +14,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -24,6 +28,3 @@ dist-ssr
 *.sw?
 
 .env
-
-# vscode
-.vscode

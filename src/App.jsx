@@ -61,8 +61,10 @@ const App = () => {
           />
 
           {/* Blog Details Page (without Hero section) */}
+        
           <Route
-           path="/blogs/:id"
+            //  path="/blogs/:id"
+            path="/blogs/slug/:slug"
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <>

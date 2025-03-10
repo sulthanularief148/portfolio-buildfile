@@ -1,41 +1,40 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { SectionWrapper } from "../hoc";
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
+  const fetchBlogs = async () => {
+    try {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/blogs`);
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/blogs`);
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        setBlogs(data.slice(0, 4)); // Get the first 4 blogs
-      } catch (err) {
-        console.error("Failed to fetch blogs:", err);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-    };
 
-    fetchBlogs();
+      const data = await response.json();
+      setBlogs(data.slice(0, 8));
+    } catch (err) {
+      console.error("Failed to fetch blogs:", err);
+    }
+  };
+  useEffect(() => {
+    fetchBlogs()
   }, []);
 
   return (
-    <section className="py-10 px-5">
+    <>
       <h2 className="text-3xl font-bold mb-5 text-center text-[#C552EC]COn">Recent Blogs</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="bg-primary p-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform"
+            className="bg-primary p-4 cursor-pointer rounded-xl shadow-lg transform hover:scale-105 transition-transform"
           >
             {/* Blog Image */}
             {blog.images && blog.images.length > 0 && (
               <img
-                src={blog.images[0]} // Fix parsing error
+                src={blog.images[0]}
                 alt={blog.title}
                 className="w-full h-40 object-cover rounded-lg mb-3"
               />
@@ -44,7 +43,7 @@ const BlogSection = () => {
             <h3 className="text-[#C552EC] text-lg md:text-xl font-bold">{blog.title}</h3>
             <p className="text-xs text-gray-400">{blog.date}</p>
             <p className="mt-2 line-clamp-3 text-gray-300">{blog.description}</p>
-            <Link to={`/blogs/${blog.id}`} className="inline-block mt-3 text-indigo-400 hover:text-indigo-300">
+            <Link to={`/blogs/slug/${blog?.slug}`} className="inline-block mt-3 text-indigo-400 hover:text-indigo-300">
               Read More →
             </Link>
           </div>
@@ -58,8 +57,8 @@ const BlogSection = () => {
           View All Blogs
         </Link>
       </div>
-    </section>
+    </>
   );
 };
 
-export default BlogSection;
+export default SectionWrapper(BlogSection, 'blog')
