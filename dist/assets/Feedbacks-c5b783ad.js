@@ -1,0 +1,1 @@
+import{a as r}from"./index-eef417ca.js";import{S as a}from"./SectionWrapper-7355703f.js";import"./styles-7f04b9ad.js";import"./motion-fc06a395.js";const e=()=>r("div",{className:"mt-12 bg-black-100 rounded-[20px]"}),p=a(e,"");export{p as default};
