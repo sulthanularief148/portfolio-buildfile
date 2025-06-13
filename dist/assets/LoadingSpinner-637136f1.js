@@ -1,0 +1,1 @@
+import{j as r,a as e}from"./index-9dfcda18.js";const a=()=>r("div",{className:"flex justify-center items-center h-screen",children:[e("div",{className:"animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600 border-t-transparent"}),e("span",{className:"ml-4 text-blue-600 font-semibold",children:"Loading..."})]});export{a as default};
